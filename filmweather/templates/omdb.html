@@ -1,0 +1,13 @@
+<div class="col-md-4 mb-3">
+    <div class="card bg-dark text-white h-100">
+        <div class="card-body">
+            <h5 class="card-title">{{ omdb_data.title }}</h5>
+            <p>{{ omdb_data.year }}</p>
+            {% if omdb_data.poster == True %}
+                <img src="{{ omdb_data.poster }}" class="img-fluid mt-2" alt="Poster">
+            {% else %}
+                <img src="https://www.wondercide.com/cdn/shop/articles/Upside_down_gray_cat.png?v=1685551065" class="img-fluid mt-2" alt="Poster">
+            {% endif %}
+        </div>
+    </div>
+</div>
